@@ -128,6 +128,7 @@ def file_maker(text):
 
 def main_function():
     if argument_checker():
+        print("stahuji data ze stranky!".upper())
         list1 = joining_num_and_nam()
         list2 = all_joined_votes(sys.argv[1])
         clean_list2 = []
@@ -142,6 +143,7 @@ def main_function():
         for i in range(len(list1)):
             list3.append(list1[i] + clean_list2[i])
         file_maker(list3)
+        print(f'data ulozena v {sys.argv[2]}'.upper())
         
         
 
